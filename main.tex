@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e} 
+\usepackage{graphicx}% Include figure files
+\usepackage{graphics}
+\usepackage{subfig}
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{multirow}
+\setlength{\tabcolsep}{8pt}
+\renewcommand{\arraystretch}{1.5}
+\usepackage{amsmath, amsthm, amssymb}
+\documentclass{article}
+\usepackage[spanish]{babel}
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\graphicspath{{Imagenes/}}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\renewcommand{\vec}[1]{\boldsymbol{\mathrm{#1}}}
+
+\usepackage{float}
+\setlength{\parindent}{0cm}
+\setlength\parindent{0pt}
+\title{Tarea3}
+\author{Kevin Cortés G }
+\date{September 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Oscilador Armonico Simple}
+Veamos y analicemos las graficas de un conjunto de osciladores armonicos simples unidimensionales.
+\subsection{Graficas Y vs t}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.8]{OsciladorArmonico.PNG}
+    \caption{grafica de posicion vs tiempo}
+    \label{fig:my_label}
+\end{figure}
+Es un movimiento sinusoidal  en el tiempo en cada oscilador como esperabamos, la primera no parece sinusoidal, pero lo es, solo que con los parametros que impusimos nos da un periodo de oscilacion muy grande, por eso su forma alargada.
+
+\subsection{Espacio de Fase}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.8]{Fase armonico.PNG}
+    \caption{Espacio de Fase para Osciladores armonicos}
+    \label{fig:my_label}
+\end{figure}
+
+Debido a que el ocilador armonico simple es un sistema conservativo, el hamiltoniano me proporciona la ecuacion de la cuerva en el espacio de fase, esta ecuación puede ser la de una circunferencia o la de una elipse, ambos caso son trayetorias cerradas en el espacio de fase movimiento (posiciones y momentos periodicos), recordemos que la curva en rojo es para un sistema con periodo muy grande para el tiempo que consideramos aun no se alcanza a repetir sus valores de poscion y velocidad, es decir, a cerrar la trayectoria.
+
+\section{Oscilador Amortiguado}
+En este caso mostraremos y analizaremos las graficas de las variables dinámicas  correpondientes a un conjunto de osciladores amortiguados en el caso de osciladores sub-amortiguados.
+\\
+$\textbf{Ecuación}$ $$\frac{d^2x}{dt^2}+2\gamma \frac{dx}{dt}+ \omega^2_0 x=0$$
+\\
+con $\omega^2_0=\frac{k}{m}$, $\gamma=\frac{b}{2m}$ donde b es el coeficiente de amortiguamiento.
+\\
+\\
+$\textbf{Caso sub-amortiguado:} $ $\omega^2_0 > \gamma^2$
+
+\subsection{Graficas Y vs t}
+En este sistema la energia no se conserva debido a la interacción con el fluido, Para el caso Sub-Amortiguado tenemos una amplitud modulada por una exponencial negativa que para tiempos muy grandes el sistema habra llegado al reposo.(fig 3)
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.8]{Osciladoramortiguado.PNG}
+    \caption{Graficas posición vs t}
+    \label{fig:my_label}
+\end{figure}
+La figura en amarillo es el caso en el que $\omega^2_0 >> \gamma^2$, por lo tanto para los tiempos considerados acá, apenas se ve un cambio en la amplitud de  este oscilador.
+
+\subsection{Espacio de Fase}
+La interacción objeto-fluido se manifiesta en decrementos en el tiempo del valor absoluto de las variables dinámicas, es decir, tanto el momento como las velocidades van a ir cayendo a cero a medida que ocurre el movimiento, por lo que curva en el espacio de fase se va ir acercando a ($y=0$, $P_y=0$), es decir este punto es el foco de una espiral en el Espacio de fase (Fig 4).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{fase Amortiguado.PNG}
+    \caption{Espacio de Fase Para Oscilados sub-amortiguado}
+    \label{fig:my_label}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
